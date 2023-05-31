@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/canvas.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<select id="queueType">
+					<option value="STANDARD">STANDARD</option>
+					<option value="FIFO">FIFO</option>
+				</select>
+				<button id="startBtn">Start</button>
+				<button id="clearBtn">Clear</button>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 canvas">
+				<canvas id="canvas"></canvas> 
+			</div>
+			<div class="col-md-6 canvas">
+				<canvas id="clone"></canvas> 
+			</div>
+		</div>
+	</div>
+
+    <script src="js/jquery.min.js"></script>
+	<script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/client.js"></script>
+  </body>
+</html>
